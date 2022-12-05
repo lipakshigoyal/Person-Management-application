@@ -1,0 +1,240 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Company Application</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/5d0d1726d6.js" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="People.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <img src="A/logo.png"id="logo">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#dash">Dashboard</a>
+                  <li class="nav-item"><a class="nav-link" href="#use">View User</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Leave"> On Leave</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#Blog"> Blog</a></li>
+              </ul>
+            </div>
+        
+          </nav>
+
+            <img src="A/letters-alphabet-ngo-wooden-cubes-green-plant-white-background-ngo-short-nongovernmental-organization_384017-4654.jpg" style="margin-left:10%;width:80%;box-shadow:5px 5px 15px gray">
+            
+        <div class="container" id="dash">
+            <div class="row">
+              <div class="col-md-3 " style=" font-size:30px;font-weight: bold;margin-left :50px;">
+                <i class="fa-solid fa-person" ></i>
+                &nbsp&nbsp 10 Employees
+              </div>
+              <div class="col-md-3 " style=" font-size:30px;font-weight: bold;margin-left :50px;">
+                <i class="fa-solid fa-folder-open"></i>
+                &nbsp&nbsp2 Leaves
+              </div>
+              <div class="col-md-3 " style=" font-size:30px;font-weight: bold;margin-left :50px;">
+                <i class="fa-solid fa-file"></i>
+                &nbsp&nbsp3 Projects
+              </div>
+            </div>
+            <div class="container" id="to1">
+                <h1>Running Projects</h1>
+                <table class="table">
+                    <tr>
+                        <th>Title</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                    </tr>
+                    <tr>
+                        <td>Aquari.io</td>
+                        <td>29 Jan,2022</td>
+                        <td>29 August,2022</td>
+                    </tr>
+                    <tr>
+                        <td>TipsyCoin </td>
+                        <td>31 March,2022</td>
+                        <td>30 Dec,2022</td>
+                    </tr>
+                    <tr>
+                        <td>TipsyCoin </td>
+                        <td>2 Feb,2022</td>
+                        <td>8 Nov,2022</td>
+                    </tr>
+                    <tr>
+                        <td> World of Waves</td>
+                        <td>26 Feb,2022</td>
+                        <td>10 Dec,2022</td>
+                    </tr>
+                </table>
+             </div>
+             <div class="container" id="to">
+                 <h1>To Do list</h1>
+                 <h3>List of next task to complete</h3>
+                  
+                 
+                 <table class="table" id="myTable">
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>Assign Task</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>Research on projects pending</td>
+                    </tr>
+                  </table>
+                  <textarea id="w" name="w3review" rows="4" cols="50"></textarea><br>
+                  <button type="button" id="add1">Add Task</button>
+             </div>
+        </div>
+        
+        <div class="container" id="use">
+            <h1 id="detailss">Enter Id of person to fetch Details.....</h1>
+            <div id="search" class="container">
+                <form>
+                    <input type="text" id="se">
+                    <button id="click">click</button>
+                </form>
+            </div>
+            <h1 style="margin-bottom:40px">Person Detail:</h1>
+            <table class="table" id="d">
+                <tr>
+                    <th>Id</th>
+                    <td id="id"></td>
+                </tr>
+                <tr>
+                    <th>Name</th>
+                    <td id="name"></td>
+                </tr>
+                <tr>
+                    <th>Username</th>
+                    <td id="username"></td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td id="email"></td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td id="address"></td>
+                </tr>
+                <tr>
+                    <th>Zipcode</th>
+                    <td id="zipcode"></td>
+                </tr>
+                <tr>
+                    <th>Phone</th>
+                    <td id="phone"></td>
+                </tr>
+                <tr>
+                    <th>Website</th>
+                    <td id="website"></td>
+                </tr>
+                <tr>
+                    <th>Company Name</th>
+                    <td id="company"></td>
+                </tr>
+                <tr>
+                    <th>Catch Phrase</th>
+                    <td id="catchP"></td>
+                </tr>
+                <tr>
+                    <th>bs</th>
+                    <td id="bs"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Leave" class="container">
+            <h1>Leave List</h1>
+            <hr> 
+            <table class="table taable-striped">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Number of Days</th>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Chelsey Dietrich</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Kurtis Weissnat</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Glenna Reichert</td>
+                <td>1</td>
+            </tr>
+        </table>
+            
+        </table>
+    </div>
+        </div>
+<div class="container" id="Blog">
+    <h1>Blogging Form:</h1>
+    <form action="action_page.php">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="country">Country</label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Subject</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <button type="button bg-secondary">Submit</button>
+      </div>
+    </form>
+  </div>
+        <div id="d" class="w3-padding-64 w3-content w3-text-grey" style="padding:3em;background-color: black;margin-top: 3em;text-align: center;color:rgb(152, 140, 140)">
+            <h2 class="w3-text-light-grey">Contact Me</h2>
+            <hr style="width:200px" class="w3-opacity">
+        
+            <div class="w3-section">
+              <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Punjab, India</p>
+              <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 987654321</p>
+              <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: lipakshi0423.be@gmail.com</p>
+            </div><br>
+            <p>Let's get in touch. Send me a message:</p>
+        
+            
+       <script src="People.js"></script>
+    </body>
+</html>
